@@ -11,6 +11,15 @@ body .header{width:auto;height:500px}body .header h2{position:absolute;top:70px;
         position :absolute;
         left: 15px;
     }
+    body .header .twitter {
+        position: relative;
+        right: 90px;
+        
+    }
+    body .facebook{
+        position: relative;
+        left:0px;
+    }
     body .header .top-menu {
         position: relative;
         left: 20px;
