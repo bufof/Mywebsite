@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@mixin menu ($width, $height) {
+    font-size: 14px;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+    width: $width;
+    height: $height;
+}
+
+@mixin menuLetter {
+    float: left;
+    display: block;
+    color: rgb(128, 128, 128);
+    height: 27px;
+    width: 70px;
+    padding-top: 6px;
+    margin-left: 20px;
+}
+
+body {
+    .clear {
+        clear: left;
+    }
+    .header {
+        width: auto;
+        height: 500px;
+
+        h2 {
+            position: absolute;
+            top: 70px;
+            left: 230px;
+            font-size: 37px;
+            color: rgba(0, 0, 0, 0.701);
+        }
+
+        .twitter {
+            float: right;
+            font-size: 30px;
+            color: rgba(0, 115, 255, 0.536);
+            position: relative;
+            top: 100px;
+            right: 290px;
+        }
+
+        .facebook {
+            float: right;
+            font-size: 30px;
+            color: rgba(255, 0, 68, 0.481);
+            position: relative;
+            top: 100px;
+            right: 200px;
+        }
+
+        .top-menu {
+            @include menu(400px, 140px);
+            float: right;
+            position: relative;
+            top: 170px;
+            right: 120px;
+
+            p {
+                @include menuLetter();
+
+                &:active {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+
+    .main {
+        .big {
+            list-style: none;
+            font-size: 43px;
+            position: relative;
+            bottom: 220px;
+            left: 230px;
+            font-family: serif;
+            opacity: 0.57;
+            font-weight:100;
+
+        }
+        .first{
+            font-family:serif;
+            font-size:14px;
+            position: relative;
+            bottom:166px;
+            left:233px;
+            line-height: 12px;
+        }
+        .form{
+            position: relative;
+            bottom: 125px;
+            left: 236px;
+            line-height: 9px;
+            p{
+            margin-top:19px;
+            font-weight: lighter;
+            font-family: sans-serif;
+            font-size:12.5px;
+            span{
+                background-color:red;
+                color:white;
+                font-size:9px;
+                padding:3px;
+                opacity: 0.75;
+                margin-left:6px;
+            }
+            }
+            input{
+                height: 20px;
+                width: 346px;
+                border:0.1px solid rgba(0, 0, 0, 0.303);
+
+            }
+            textarea{
+                height: 168px;
+                width: 400px;
+                border:0.1px solid rgba(0, 0, 0, 0.31);
+            }
+            button{
+                height: 50px;
+                width:230px;
+                background-color:rgba(0, 0, 0, 0.4);
+                color:white;
+                font-size:14px;
+                text-align:center;
+                padding-top:20px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .bottom-menu {
+            @include menu(400px, 100px);
+            position: relative;
+            left: 240px;
+
+            p {
+                @include menuLetter();
+
+                &:active {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+
+}

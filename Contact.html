@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ~チーズ味~</title>
+    <link rel="stylesheet" href="contact.min.css">
+    
+
+</head>
+
+<body>
+    <div class="clear"></div>
+    <div class="header">
+        <h2>*MyPortfolio*</h2>
+        <a class="twitter" href="https://twitter.com/VUgtCx9KR6ofSXg">
+            <span class="fa fa-twitter-square"></span>
+        </a>
+        <a class="facebook" href="https://www.facebook.com/profile.php?id=100055788890763">
+            <span class="fa fa-facebook"></span>
+        </a>
+        <div class="top-menu">
+            <a href="file:///Users/uchidarikuto/Port_site/index.html">
+                <p>Top</p>
+            </a>
+            <a href="file:///Users/uchidarikuto/Port_site/About.html">
+                <p>About</p>
+            </a>
+            <a href="file:///Users/uchidarikuto/Port_site/Works.html">
+                <p>Works</p>
+            </a>
+            <a href="file:///Users/uchidarikuto/Port_site/Contact.html">
+                <p>Contact</p>
+            </a>
+        </div>
+    </div>
+    <!--ここまでヘッダー-->
+
+    <div class="main">
+        <li class="big">Contact</li>
+        <div class="first">
+        <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
+        <p>下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
+        </div>
+        <form name="form1" onsubmit="checkInfo()">
+        <div class="form">
+            <p>貴社名</p>
+            <input type="text" name="company">
+            <p>お名前 <span>必須</span></p>
+            <input type="text" name="name">
+            <p>メールアドレス <span>必須</span></p>
+            <input type="email" name="email">
+            <p>電話番号</p>
+            <input type="text">
+            <p>お問い合わせ内容 <span>必須</span></p>
+            <textarea name="content" type="text" cols="30" rows="10"></textarea>
+            <button type="submit">内容を送信する</button>
+        </div>
+        </form>
+    </div>
+    <!--ここまでメイン-->
+
+    <div class="footer">
+        <div class="bottom-menu">
+            <a href="file:///Users/uchidarikuto/Port_site/index.html">
+                <p>Top</p>
+            </a>
+            <a href="file:///Users/uchidarikuto/Port_site/About.html">
+                <p>About</p>
+            </a>
+            <a href="file:///Users/uchidarikuto/Port_site/Works.html">
+                <p>Works</p>
+            </a>
+            <a href="file:///Users/uchidarikuto/Port_site/Contact.html">
+                <p>Contact</p>
+            </a>
+        </div>
+    </div>
+    <!--ここまでフッター-->
+</body>
+
+<script type="text/javascript">
+    function checkInfo(){
+        console.log("");
+        let i = 0
+        if(document.form1.name.value == ""){
+            i = 1;
+        }else if(document.form1.email.value == ""){
+            i = 1;
+        }else if(document.form1.content.value == ""){
+            i = 1;
+        }
+        if(i){
+            window.alert("必須項目に未入力があります。");
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+</script>
+
+</html>
