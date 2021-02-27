@@ -20,6 +20,6 @@ body .header{width:auto;height:500px}body .header h2{float:left;font-size:37px;c
     body .header .main-image p{
         position: absolute;
         top:450px;
-        left:80px;
+        left:20px;
     }
 }
