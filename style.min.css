@@ -24,6 +24,9 @@ body .header{width:auto;height:500px}body .header h2{position:absolute;top:70px;
         position: relative;
         left: 20px;
     }
+    body .header .man-image{
+        display: none;
+    }
     body .footer .bottom-menu{
         position: relative;
         top: 300px;
